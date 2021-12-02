@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body{
+    background-color: burlywood;
+    color: black;
+}
+
+/* PRIMERA PAGINA INDEX */
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "titulo titulo titulo"
+                        "menuCostado contenidoPagina contenidoPagina"
+                        "foto1 foto1 foto2"
+                        "pieDePagina pieDePagina pieDePagina";
+}
+
+.contenedor div{
+    background-color: rgb(189, 139, 63);
+    padding: 0px;
+    border-radius: 5px;
+}
+
+.titulo{
+    background-color: rgb(72, 114, 64);
+    color: #deb887;
+    font-style: italic;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 5px;
+    grid-area: titulo;
+    background-image: linear-gradient(to right, rgb(72, 114, 64), #deb887);
+}
+
+.contenidoPagina{
+    background-color: rgb(189, 139, 63);
+    padding: 22px;
+    border-radius: 5px;
+    grid-area: contenidoPagina;
+    text-align: center;
+}
+
+.menuCostado{
+    background-color: rgb(72, 114, 64);
+    padding: 0;
+    border-radius: 5px;
+    letter-spacing: 3px;
+    grid-area: menuCostado;
+    text-align: center;
+    display: flex;
+    position: static;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgb(72, 114, 64), #deb887);
+}
+
+.seccionesMenu li{
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.seccionesMenu li a{
+    color: rgb(51, 119, 62);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.3s ease 0s;
+    line-height: 45px;
+}
+
+.seccionesMenu li a:hover{
+    background-color: rgb(192, 160, 92);
+}
+
+.foto1{
+    height: auto;
+    text-align: center;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    grid-area: foto1;
+}
+
+.fotoInicio{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.foto2{
+    height: auto;
+    text-align: center;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    grid-area: foto2;
+}
+
+.fotoInicio2{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.pieDePagina{
+    background-color: rgb(72, 114, 64);
+    color: burlywood;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    grid-area: pieDePagina;
+    text-align: center;
+}
+
+/* SEGUNDA PAGINA NOSOTROS */
+
+.contenedorNosotros{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "titulo titulo titulo"
+                        "menuCostado contenidoPagina contenidoPagina"
+                        "mateNosotros1 mateNosotros1 mateNosotros2"
+                        "pieDePagina pieDePagina pieDePagina";
+}
+
+.mateNosotros1{
+    height: auto;
+    text-align: center;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    grid-area: mateNosotros1;
+}
+
+.mateNosotros2{
+    height: auto;
+    text-align: center;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    grid-area: mateNosotros2;
+}
+
+.fotoNosotros1{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.fotoNosotros2{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+/* TERCERA PAGINA MATES */
+
+
+.contenedorMates{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:"titulo titulo titulo"
+                        "menuCostado contenidoPagina contenidoPagina"
+                        "mateDeCalabaza fotoDelMateCalabaza fotoDelMateCalabaza"
+                        "fotoMadera1 fotoMadera1 mateDeMadera"
+                        "textoMateDeVidrio fotoMateDeVidrio fotoMateDeVidrio"
+                        "pieDePagina pieDePagina pieDePagina";
+}
+
+.mateDeCalabaza{
+    background-color: rgb(189, 139, 63);
+    padding: 20px;
+    border-radius: 5px;
+    grid-area: mateDeCalabaza;
+    text-align: left;
+}
+
+.fotoDelMateCalabaza{
+    padding: 0;
+    border-radius: 5px;
+    grid-area: fotoDelMateCalabaza;
+    transition: 1s;
+}
+
+.fotoDelMateCalabaza:hover{
+    transform: scale(1.5,1.5);
+}
+
+.fotoMateCalabaza1{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.mateDeMadera{
+    background-color: rgb(189, 139, 63);
+    padding: 20px;
+    border-radius: 5px;
+    grid-area: mateDeMadera;
+    text-align: right;
+}
+
+.fotoMadera1{
+    padding: 0;
+    border-radius: 5px;
+    grid-area: fotoMadera1;
+    transition: 1s;
+}
+
+.fotoMadera1:hover{
+    transform: scale(1.5,1.5);
+}
+
+.fotoMateMadera1{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.textoMateDeVidrio{
+    background-color: rgb(189, 139, 63);
+    padding: 20px;
+    border-radius: 5px;
+    grid-area: textoMateDeVidrio;
+    text-align: left;
+}
+
+.fotoMateDeVidrio{
+    padding: 0;
+    border-radius: 5px;
+    grid-area: fotoMateDeVidrio;
+    transition: 1s;
+}
+
+.fotoMateVidrio1{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.fotoMateDeVidrio:hover{
+    transform: scale(1.5,1.5);
+}
+
+/* CUARTA PAGINA CUIDADOS */
+
+.contenedorCuidados{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas:"titulo titulo titulo"
+                        "menuCostado contenidoPagina contenidoPagina"
+                        "tipsMantencion tipsMantencion tipsMantencion"
+                        "videoTips videoTips videoTips"
+                        "textoCuradoMate textoCuradoMate textoCuradoMate"
+                        "videoCuradoMate videoCuradoMate videoCuradoMate"
+                        "pieDePagina pieDePagina pieDePagina";
+}
+
+.tipsMantencion{
+    background-color: rgb(189, 139, 63);
+    padding: 20px;
+    border-radius: 5px;
+    grid-area: tipsMantencion;
+    text-align: center;
+}
+
+.videoTips{
+    background-color: rgb(189, 139, 63);
+    padding: 20px;
+    border-radius: 5px;
+    grid-area: videoTips;
+    align-items: center;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.textoCuradoMate{
+    background-color: rgb(189, 139, 63);
+    padding: 20px;
+    border-radius: 5px;
+    grid-area: textoCuradoMate;
+    text-align: center;
+}
+
+.videoCuradoMate{
+    background-color: rgb(189, 139, 63);
+    padding: 20px;
+    border-radius: 5px;
+    grid-area: videoCuradoMate;
+    align-items: center;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+
+/* QUINTA PAGINA CONTACTO */
+
+.contenedorContacto{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "titulo titulo titulo"
+                        "menuCostado contenidoPagina contenidoPagina"
+                        "pieDePagina pieDePagina pieDePagina";
+}
+
+.formularios{
+    text-align: justify;
+}
+.formularios label{
+    font-weight: bold;
+}
+
+
+
+
+/* @media only screen and (max-width: 400px) {
+    .contenedor{
+        grid-template-areas: "titulo titulo titulo"
+                            "menuCostado menuCostado menuCostado"
+                            "contenidoPagina contenidoPagina contenidoPagina"
+                            "foto1 foto1 foto1"
+                            "foto2 foto2 foto2"
+                            "pieDePagina pieDePagina pieDePagina";
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 768px){
+    .contenedor{
+        grid-template-areas: "titulo titulo titulo"
+                            "menuCostado menuCostado menuCostado"
+                            "contenidoPagina contenidoPagina contenidoPagina"
+                            "foto1 foto1 foto1"
+                            "foto2 foto2 foto2"
+                            "pieDePagina pieDePagina pieDePagina";
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .contenedor{
+        grid-template-areas: "titulo titulo titulo"
+                            "menuCostado menuCostado menuCostado"
+                            "contenidoPagina contenidoPagina contenidoPagina"
+                            "foto1 foto1 foto1"
+                            "foto2 foto2 foto2"
+                            "pieDePagina pieDePagina pieDePagina";
+    }
+} */
